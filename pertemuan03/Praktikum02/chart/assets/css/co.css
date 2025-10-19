@@ -1,0 +1,161 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #fff;
+  color: #000;
+  height: 100%;
+}
+
+/* ===== Navbar ===== */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #e9e9e9;
+  padding: 10px 20px;
+  border-bottom: 1px solid #ccc;
+}
+
+.navbar .logo {
+  font-weight: bold;
+}
+
+.navbar .nav-links a {
+  margin: 0 8px;
+  text-decoration: none;
+  color: blue;
+}
+
+.navbar .cart {
+  font-size: 14px;
+}
+
+/* =========== MAIN CONTENT =========== */
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+}
+
+.order-details {
+  width: 65%;
+}
+
+.order-details h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.order-details p {
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.checkmark {
+  font-size: 26px;
+  color: black;
+}
+
+hr {
+  margin: 20px 0;
+  border: none;
+  border-top: 1px solid #ccc;
+}
+
+.customer-info h3 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.info-section {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.info-block {
+  width: 48%;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.info-block a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+/* =========== SUMMARY BOX =========== */
+.summary {
+  width: 30%;
+  background-color: #eee;
+  padding: 15px;
+  font-size: 14px;
+  height: fit-content;
+}
+
+.summary h4 {
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+
+.summary div {
+  display: flex;
+  justify-content: space-between;
+  margin: 5px 0;
+}
+
+.summary input {
+  width: 65%;
+  padding: 5px;
+  margin-top: 5px;
+  border: 1px solid #aaa;
+}
+
+.summary button {
+  padding: 5px 10px;
+  border: 1px solid #aaa;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.total {
+  border-top: 1px solid #aaa;
+  margin-top: 10px;
+  padding-top: 10px;
+  font-weight: bold;
+}
+
+/* =========== FOOTER =========== */
+footer {
+  border-top: 2px solid #ddd;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  font-size: 13px;
+}
+
+footer a {
+  color: #0066cc;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+.newsletter input {
+  padding: 5px;
+  width: 150px;
+  margin-right: 5px;
+  border: 1px solid #aaa;
+}
+
+.newsletter button {
+  padding: 5px 10px;
+  border: 1px solid #aaa;
+  background: #fff;
+  cursor: pointer;
+}
