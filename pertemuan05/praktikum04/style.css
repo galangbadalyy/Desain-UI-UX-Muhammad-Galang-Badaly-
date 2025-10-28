@@ -1,0 +1,223 @@
+/* Mereset dasar */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: linear-gradient(to bottom, #f5fdf4, #e8f5e9);
+    color:#333;
+    line-height: 1.6;
+    padding-bottom: 50px;
+}
+
+/* Bagian Header  */
+
+#header {
+    text-align: center;
+    background: #Faa968;
+    color: white;
+    padding: 40px 20px;
+    border-bottom: 5px solid #f6dcac;
+}
+
+#header h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+blockquote {
+    font-style: italic;
+    font-size: 1em;
+    color: #f0fdf4;
+    background: rgba(255, 255, 255, 0.1);
+    display: inline-block;
+    padding: 15px;
+    border-left: 4px solid #fff;
+    border-radius: 8px;
+}
+
+#soekarno {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #fff;
+}
+
+ul {
+    list-style: none;
+    background: #f0fdf4;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    gap: 30px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #1b5e20;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+ul li a:hover {
+    color: #004d40;
+}
+
+.gambar {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.gambar img {
+    width: 250px;
+    height: auto;
+    border-radius: 12px;
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.gambar img:hover {
+    transform: scale(1.05);
+}
+
+.isi {
+    width: 80%;
+    margin: 0 auto 30px auto;
+    background: #ffffff;
+    padding: 20px 30px;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.isi .jawa {
+    color: #2e7d32;
+    font-weight: bold;
+}
+
+#profil {
+    width: 80%;
+    margin: 0 auto 30px auto;
+    background: #f6dcac;
+    padding: 20px 30px;
+    border-left: 5px solid #Faa968;
+    border-radius: 12px;
+}
+
+#profil h3 {
+    color: #33691e;
+    margin-bottom: 15px;
+}
+
+#profil ul {
+    list-style: square inside;
+    background: none;
+    display: block;
+    padding: 0;
+}
+
+#profil li {
+    margin-bottom: 10px;
+}
+
+#beternak {
+    width: 80%;
+    margin: 0 auto 30px auto;
+    background: #f0fdf4;
+    padding: 20px 30px;
+    border-radius: 12px;
+}
+
+#beternak h3 {
+    color: #33691e;
+    margin-bottom: 10px;
+}
+
+#beternak ol {
+    margin-left: 20px;
+}
+
+#beternak li {
+    margin-bottom: 20px;
+}
+
+#beternak h4 {
+    color: #2e7d32;
+    margin-bottom: 5px;
+}
+
+.koleksi {
+    text-align: center;
+    background: #f6dcac;
+    padding: 30px 0;
+    border-top: 4px solid #Faa968;
+}
+
+.koleksi img {
+    width: 180px;
+    height: 130px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin: 10px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s;
+}
+
+.koleksi img:hover {
+    transform: scale(1.07);
+}
+
+.promo {
+    background: #f0fdf4;
+    padding: 30px;
+    text-align: center;
+    width: 80%;
+    margin: 40px auto;
+    border-radius: 12px;
+    border: 2px dashed #66bb6a;
+}
+
+.promo h2 {
+    color: #1b5e20;
+    margin-bottom: 15px;
+}
+
+.promo h3 {
+    color: #2e7d32;
+    margin-bottom: 15px;
+}
+
+.promo strong {
+    color: #d32f2f;
+    font-size: 1.3em;
+}
+
+#Wa {
+    font-weight: bold;
+    color: #004d40;
+}
+
+.promo h4 {
+    margin-top: 20px;
+    color: #33691e;
+}
+
+.promo ol {
+    list-style: decimal inside;
+    display: inline-block;
+    text-align: left;
+    margin-top: 10px;
+}
+
+.promo a {
+    color: #2e7d32;
+    text-decoration: none;
+}
+
+.promo a:hover {
+    text-decoration: underline;
+}
