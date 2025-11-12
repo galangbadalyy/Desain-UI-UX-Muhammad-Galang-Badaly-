@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kelola Mesjid</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #fff;
+            margin: 30px;
+            justify-content: center;
+        }
+
+        .nav {
+            font-size: 14px;
+            margin-bottom: 10px;
+            margin-left: 70%;
+        }
+
+        .nav a {
+            text-decoration: none;
+            color: #0000EE;
+        }
+
+        .nav a:hover {
+            text-decoration: underline;
+        }
+
+        form {
+            border: 2px solid #000;
+            padding: 20px;
+            max-width: 800px;
+        }
+
+        .row {
+
+            margin-bottom: 12px;
+        }
+
+        label {
+
+            display: inline-block;
+            width: 160px;
+            vertical-align: top;
+            font-weight: normal;
+        }
+
+        textarea {
+            border: 2px solid #000;
+            width: 60%;
+            padding: 4px;
+            font-size: 14px;
+            font-family: Arial, sans-serif;
+            background: #fff;
+            box-sizing: border-box;
+        }
+
+        textarea {
+            height: 80px;
+        }
+
+        .inline-select select {
+            width: auto;
+            margin-right: 10px;
+        }
+
+        .buttons {
+            margin-top: 15px;
+        }
+
+        button {
+            border: 2px solid #000;
+            background: #fff;
+            padding: 4px 12px;
+            margin-right: 8px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        button:hover {
+            background: #eaeaea;
+        }
+
+        .input {
+            border: 2px solid #000;
+        }
+    </style>
+
+</head>
+
+<body>
+    <form>
+
+        <div class="nav">
+            <a href="#">Home</a> &gt;
+            <a href="#">Admin</a> &gt;
+            Kelola Mesjid
+        </div>
+
+        <div class="row">
+            <label for="nama">Nama Mesjid</label>
+            <input class="input" type="text" id="nama" name="nama_mesjid" placeholder="Masukan Nama Masjid">
+        </div>
+
+        <div class="row inline-select">
+            <label for="kecamatan">Kecamatan</label>
+            <select id="kecamatan" name="kecamatan">
+                <option value="beji">Beji</option>
+                <option value="cilodong">Cilodong</option>
+                <option value="pancoran-mas">Pancoran Mas</option>
+            </select>
+
+            <label for="kelurahan" style="width:auto;">Kelurahan</label>
+            <select id="kelurahan" name="kelurahan">
+                <option value="kukusan">Sukmajaya</option>
+                <option value="pondokcina">Cimanggis</option>
+                <option value="kemiri-muka">Pondok cina</option>
+            </select>
+        </div>
+
+        <div class="row">
+            <label for="fasilitas">Deskripsi Fasilitas</label>
+            <textarea id="fasilitas" name="deskripsi_fasilitas" placeholder="MAsukan Deskripsi Fasiltias"></textarea>
+        </div>
+
+        <div class="row">
+            <label for="pengurus">Nama Pengurus DKM</label>
+            <input class="input" type="text" id="pengurus" name="nama_pengurus" placeholder="Masukan Nama Pengurus DKM">
+        </div>
+
+        <div class="row">
+            <label for="telepon">No HP/Telpon :</label>
+            <input class="input" type="text" id="telepon" name="telepon" placeholder="Masukan Nomor Telepon">
+        </div>
+
+        <div class="row">
+            <label for="email">Email :</label>
+            <input class="input" type="email" id="email" name="email" placeholder="Masukan Alamat Email">
+        </div>
+
+        <div class="row">
+            <label for="web">Alamat Web :</label>
+            <input class="input" type="text" id="web" name="alamat_web" value="http://">
+        </div>
+
+        <div class="row">
+            <label for="alamat">Alamat Lengkap :</label>
+            <textarea id="alamat" name="alamat_lengkap" placeholder="Masukan Alamat Lengkap"></textarea>
+        </div>
+
+        <div class="row">
+            <label for="koordinat">Masukan titik kordinat</label>
+            <input class="input" type="text" id="koordinat" name="koordinat" placeholder="Masukan Titik Kordinat">
+        </div>
+
+        <div class="buttons">
+            <button type="submit">Simpan</button>
+            <button type="button">Update</button>
+            <button type="reset">Hapus</button>
+        </div>
+    </form>
+
+</body>
+
+</html>
