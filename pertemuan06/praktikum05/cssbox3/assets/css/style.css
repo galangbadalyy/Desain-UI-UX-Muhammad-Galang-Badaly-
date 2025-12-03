@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 20px;
+    font-family: sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Jarak vertikal yang rapat sesuai gambar */
+    border: 1px solid #333;
+    padding: 10px;
+    max-width: 800px;
+    margin: 0 auto;
+    height: 90vh; /* Agar tinggi hampir full layar */
+}
+
+/* --- Baris Atas --- */
+.top-row {
+    display: flex;
+    gap: 10px;
+    height: 100px; /* Tinggi tetap untuk baris atas */
+}
+
+.box-yellow {
+    background-color: #ebeb5e;
+    width: 25%; /* Lebar ini harus sama dengan .col-green nanti */
+    border: 1px solid #777;
+}
+
+.box-orange {
+    background-color: #ff6f3c;
+    flex: 1; /* Mengisi sisa lebar */
+    border: 1px solid #777;
+}
+
+/* --- Baris Tengah --- */
+.middle-row {
+    display: flex;
+    gap: 10px;
+    flex: 1; /* Flex 1 disini agar bagian tengah TINGGI mengisi sisa ruang layar */
+}
+
+.col-green {
+    background-color: #a2d988;
+    width: 25%; /* Lebar SAMA dengan box-yellow di atas agar lurus */
+    border: 1px solid #777;
+}
+
+.col-grey {
+    background-color: #d3d3d3;
+    flex: 2; /* Bagian tengah lebih lebar */
+    border: 1px solid #777;
+}
+
+.col-cyan {
+    background-color: #4fc3f7;
+    width: 20%; /* Kolom kanan */
+    border: 1px solid #777;
+}
+
+/* --- Footer --- */
+.footer-blue {
+    background-color: #1a53ff; /* Biru tua */
+    height: 60px;
+    border: 1px solid #777;
+}

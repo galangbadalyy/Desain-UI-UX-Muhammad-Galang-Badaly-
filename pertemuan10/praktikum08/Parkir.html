@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplikasi Parkir Sederhana</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            padding-top: 50px;
+        }
+        .kotak-aplikasi {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            width: 300px;
+        }
+        input {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0 15px 0;
+            box-sizing: border-box;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+        .hasil {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #e9ecef;
+            border-left: 5px solid #007bff;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="kotak-aplikasi">
+        <h2>Hitung Biaya Parkir</h2>
+        
+        <label for="jamMasuk">Jam Masuk (0-24):</label>
+        <input type="number" id="jamMasuk" placeholder="Contoh: 8">
+
+        <label for="jamKeluar">Jam Keluar (0-24):</label>
+        <input type="number" id="jamKeluar" placeholder="Contoh: 11">
+
+        <button onclick="hitungParkir()">Hitung Biaya</button>
+
+        <div id="tampilanHasil" style="display: none;" class="hasil"></div>
+    </div>
+
+    <script>
+        
+        function hitungParkir() {
+            let masuk = Number(document.getElementById("jamMasuk").value);
+            let keluar = Number(document.getElementById("jamKeluar").value);
+            
+            let lamaParkir = keluar - masuk;
+            let biaya = 0;
+
+            
+            if (lamaParkir < 0) {
+                tampilkanTeks("Jam keluar tidak valid (kurang dari jam masuk).");
+                return; 
+            }
+
+            if (lamaParkir <= 2) {
+                
+                biaya = 3000;
+            } else {
+                
+                let jamTambahan = lamaParkir - 2;
+                biaya = 3000 + (jamTambahan * 1000);
+            }
+
+            
+            let pesan = `Lama Parkir: ${lamaParkir} jam.<br>Total Bayar: Rp ${biaya}`;
+            tampilkanTeks(pesan);
+        }
+
+        
+        function tampilkanTeks(teks) {
+            let elemenHasil = document.getElementById("tampilanHasil");
+            elemenHasil.style.display = "block"; 
+            elemenHasil.innerHTML = teks; 
+        }
+
+    </script>
+</body>
+</html>

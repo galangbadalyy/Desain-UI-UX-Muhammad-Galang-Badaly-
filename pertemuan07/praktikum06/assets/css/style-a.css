@@ -1,0 +1,57 @@
+/* Reset dasar agar margin tidak mengganggu layout */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    padding: 20px;
+}
+
+.container {
+    display: flex; /* Mengaktifkan Flexbox */
+    flex-direction: row; /* Arah horizontal */
+    min-height: 100vh; /* Tinggi minimal agar terlihat bagus */
+    border: 1px solid #ddd;
+}
+
+.nav {
+    background-color: pink;
+    width: 20%; /* Lebar tetap 20% */
+    padding: 20px;
+}
+
+.right-wrapper {
+    display: flex;
+    flex-direction: column; /* Arah vertikal (atas ke bawah) */
+    width: 80%; /* Sisa lebar 80% */
+}
+
+.header, .footer {
+    background-color: khak; 
+    background-color: #f0e68c;
+    padding: 20px;
+    height: 80px; 
+}
+
+.main-content {
+    display: flex; 
+    flex-direction: row; 
+    flex-grow: 1; 
+}
+
+.article {
+    background-color: white;
+    flex: 2; 
+    padding: 20px;
+}
+
+.aside {
+    background-color: cyan;
+    flex: 1; 
+    padding: 20px;
+    display: flex;
+    align-items: center; 
+}

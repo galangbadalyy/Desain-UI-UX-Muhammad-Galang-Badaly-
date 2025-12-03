@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header {
+    background-color: paleturquoise;
+    height: 100px;
+    line-height: 100px;
+}
+
+main{
+    display: flex;
+    height: 500px;
+    line-height: 500px;
+}
+
+article {
+    flex: 3;
+    order: 1;
+}
+
+aside {
+    flex: 1;
+    order: 2;
+    background-color: plum;
+}
+
+nav {
+    flex: 1;
+    order: 3;
+    background-color: mistyrose;
+}
+
+footer {
+    background-color: aliceblue;
+    height: 130px;
+    line-height: 100px;
+}
+
