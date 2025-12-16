@@ -1,0 +1,17 @@
+.hero-carousel,
+.hero-carousel .carousel-item,
+.hero-craousel .carousel-item img {
+  height: 500px;
+}
+
+.hero-carousel img {
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .hero-carousel,
+  .hero-carousel .carousel-item,
+  .hero-craousel .carousel-item img {
+    height: 260px;
+  }
+}
